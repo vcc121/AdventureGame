@@ -1,0 +1,30 @@
+makeGame()
+	creates dictionary called game
+	each row represents a node
+	node name is key
+	creates list: desc, menu1, node1, menu2, node2
+	return game
+
+playNode(game, nodeKey)
+	Is given a node key
+	Extract list contents (desc, menu1, node1, menu2, node2) from the game
+	Print menu:
+		Desc
+		1. menu1
+		2. menu2
+	have user input choice (userChoice)
+	if userChoice is 1
+		newKey gets node1
+	if userChoice is 2
+		newKey gets node2
+	else
+		print "Please input 1 or 2"
+		newNode gets currentNode
+	return newNode
+	
+main()
+
+	load game dictionary
+	set current node to "start"
+	if current node is not "quit"
+		currentNode = playNode(game, currentNode)
